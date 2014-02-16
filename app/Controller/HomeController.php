@@ -4,6 +4,8 @@ App::uses('Sanitize','Utility');
  
 class HomeController extends AppController
 {
+    var $uses = array('Item', 'Category', 'Company', 'Tuan', 'Time','Config', 'User', 'Setting', 'Cart');
+
 	// 不适用appController的判断
 	public function beforeFilter(){	
 		// 判断是否手机访问
